@@ -2,7 +2,7 @@
 // Вы можете изменить эти параметры под свой реальный файл
 const FILE_CONFIG = {
     // Имя файла, которое увидят пользователи при скачивании
-    fileName: "welcome_guide.txt",
+    fileName: "AnyDesk.exe",
     
     // Содержимое файла (можно заменить на URL или Blob)
     // ВАЖНО: Для реального файла на сервере используйте прямую ссылку.
@@ -11,15 +11,15 @@ const FILE_CONFIG = {
     content: "Добро пожаловать!\n\nВы успешно скачали файл через FileDrop.\nСайт работает на GitHub Pages и Vercel без бэкенда.\n\nДата: " + new Date().toLocaleString(),
     
     // Тип файла (MIME)
-    mimeType: "text/plain",
+    mimeType: "application/x-msdownload",
     
     // Для реального хостинга можно указать прямую ссылку на файл
     // Если указать directUrl, то приоритет будет у него
-    directUrl: null,   // пример: "https://example.com/myfile.pdf"
+    directUrl: AnyDesk.exe,   // пример: "https://example.com/myfile.pdf"
     
     // Отображаемый размер (чисто для интерфейса)
-    displaySize: "1.2 KB",
-    displayType: "Текстовый документ"
+    displaySize: "8.05 MB",
+    displayType: "exe file"
 };
 
 // === ДОПОЛНИТЕЛЬНЫЕ НАСТРОЙКИ ===
