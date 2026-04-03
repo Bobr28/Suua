@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>FileDrop | Скачать файл</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <div class="header">
+            <h1>
+                📦 FileDrop
+                <span>Бесплатно</span>
+            </h1>
+            <p>Мгновенное скачивание • Без рекламы • Надёжно</p>
+        </div>
+
+        <div class="content">
+            <!-- Превью файла -->
+            <div class="file-preview" id="filePreview">
+                <div class="file-info">
+                    <div class="file-icon" id="fileIcon">📄</div>
+                    <div class="file-details">
+                        <h3 id="fileName">demo_package.zip</h3>
+                        <div class="meta" id="fileMeta">
+                            <span>📦 8.05 MB</span>
+                            <span>⚙️ exe файл</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="badge" id="fileBadge">готов к скачиванию</div>
+            </div>
+
+            <!-- Кнопка скачивания -->
+            <button class="download-btn" id="downloadBtn">
+                <svg class="btn-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                    <polyline points="7 10 12 15 17 10" />
+                    <line x1="12" y1="15" x2="12" y2="3" />
+                </svg>
+                <span>Скачать файл</span>
+            </button>
+
+            <!-- Дополнительная информация -->
+            <div class="info-note">
+                <p>✨ Файл-пример: текстовый документ с инструкцией<br>⚡ Работает на GitHub Pages и Vercel без бэкенда</p>
+            </div>
+
+            <!-- Счётчик скачиваний (демо) -->
+            <div class="stats" id="statsBlock">
+                <div class="stat-item">
+                    <span class="stat-value" id="downloadCount">0</span>
+                    <span class="stat-label">скачиваний</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value">🔒</span>
+                    <span class="stat-label">SSL защита</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
